@@ -37,13 +37,16 @@ require 'rails_helper'
   
  
     describe "Contact page" do
+    #  before{ visit contact_path }
+     # it{ should have_content('Contact Me') }
+    #  it{ should have_title("#{base_title} | Contact")}
       it "should hava the content 'Contact'" do
       visit contact_path
-      expect(page).to have_content('Contact Me')
+     expect(page).to have_content('Contact Me')
     end
-    it "should have the right title on my contact page" do
+      it  "should have the right title on my contact page" do
       visit contact_path
-      expect(page).to have_title("#{base_title} | Contact")
+expect(page).to have_title("#{base_title} | Contact")
     end 
     end
 
