@@ -1,4 +1,8 @@
 <% provide(:title,'Home') %>
-<h1>My Blog</h1>
-<p>This is My Blog 
-	<a href="https://github.com/herowhj/">My github persional page</a></p>
+<div class="center hero_unit">
+<h1>欢迎来到</h1>
+<h2>This is the home page<br>
+	<a href="https://github.com/herowhj/">My github persional page</a></h2>
+	<%= link_to "立即注册",'#',class:"btn btn_large btn-primary" %>
+</div>
+<%= link_to image_tag("rails.png",alt:"Rails"),'http://rubyonrails.org/' %>
